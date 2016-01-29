@@ -1,0 +1,27 @@
+{
+  "name": "ifttt-proxy",
+  "version": "1.0.0",
+  "description": "An express server that is used to send IFTTT requests",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirnatan/ifttt-proxy.git"
+  },
+  "keywords": [
+    "IFTTT"
+  ],
+  "author": "nirnatan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nirnatan/ifttt-proxy/issues"
+  },
+  "homepage": "https://github.com/nirnatan/ifttt-proxy#readme",
+  "dependencies": {
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "request": "^2.69.0"
+  }
+}
