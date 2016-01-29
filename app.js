@@ -1,13 +1,13 @@
 var express = require('express');
 var request = require('request');
 var cors = require('cors');
-const API_KEY = 'bozeXoDhGzNfn-w5bnRhcL';
+var API_KEY = 'bozeXoDhGzNfn-w5bnRhcL';
 var app = express();
 
 app.use(cors());
 
 app.get('/:event/:value1?/:value2?/:value3?', function(req, res) {
-  var iftttUrl = `https://maker.ifttt.com/trigger/${req.params.event}/with/key/${API_KEY}?value1=${req.params.value1 || ''}&value2=${req.params.value2 || ''}&value3=${req.params.value3 || ''}`;
+  var iftttUrl = 'https://maker.ifttt.com/trigger/' + req.params.event + '/with/key/' + API_KEY + '?value1=' + (req.params.value1 || '') + '&value2=' + (req.params.value2 || '') + '&value3=' + (req.params.value3 || '');
   console.log(iftttUrl);
   request(iftttUrl, function(error, response, body) {
     if (!error && response.statusCode == 200) {
