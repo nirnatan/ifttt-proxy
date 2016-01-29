@@ -16,6 +16,6 @@ app.get('/:event/:value1?/:value2?/:value3?', function(req, res) {
   });
 });
 
-app.listen(3000, function() {
+app.listen(8080, function() {
   console.log('Start listening to IFTTT requests on port 3000!');
 });
